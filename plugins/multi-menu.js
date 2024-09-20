@@ -67,7 +67,7 @@ let pp = gataVidMenu
 let fsizedoc = '1'.repeat(10)
 let adReply = { fileLength: fsizedoc, seconds: fsizedoc, contextInfo: { forwardingScore: fsizedoc, externalAdReply: { showAdAttribution: true, title: wm, body: '👋 ' + username, mediaUrl: ig, description: 'Hi', previewType: 'PHOTO', thumbnail: await(await fetch(gataMenu)).buffer(), sourceUrl: redesMenu }}}
 
-if (command == 'audioeffect'){ //audio
+if (command == 'effectmenu'){ //audio
 let menuA = ` ${lenguajeGB['smsConfi2']()} *${username}*
 
 ╭┄〔 *${wm}* 〕
@@ -291,7 +291,7 @@ console.log(e)}
 }
 handler.help = ['infomenu'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
-handler.command = ['audioeffect', 'searches','convertes', 'downloads', 'juegosmenu', 'grupomenu',
+handler.command = ['effectmenu', 'searches','convertes', 'downloads', 'juegosmenu', 'grupomenu',
 'herramientasmenu', 'info', 'makermenu', 'menulogos2', 'owner', 'animes', 'rpgmenu', 'stickers', 'menu18', 'menugrupo'] 
 //handler.register = true
 handler.exp = 50
