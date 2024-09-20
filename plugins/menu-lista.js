@@ -107,7 +107,7 @@ rows: [
 { title: "", highlight_label: "Public",
 rows: [
 { header: "Convertes", title: "List of converters commands", description: "", id: usedPrefix + "convertes" },
-{ header: "Audio effects", title: "List of effects commands", description: "", id: usedPrefix + "audioeffect" },
+{ header: "Audio effects", title: "List of effects commands", description: "", id: usedPrefix + "effectmenu" },
 { header: "Animes", title: "List random anime", description: "", id: usedPrefix + "animes" }
 ,{ header: "Info bot", title: "Show xd-7 Information", description: "", id: usedPrefix + "infobot" }
   ,{ header: "List xd-7", title: "Show xd-7 List", description: "", id: usedPrefix + "info" }
