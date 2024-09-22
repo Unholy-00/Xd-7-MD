@@ -20,7 +20,7 @@ await conn.sendButton(m.chat, str, wm, media, [
 ['Back to Menu', '/menu']], null, [
 ['Xfinity', md]], fkontak)}
 //conn.sendFile(m.chat, media, 'gata.mp4', str, fkontak)
-/*conn.sendHydrated(m.chat, str, wm, media, 'https://github.com/Unholy-00/xd-7-MD', 'Xfinity', null, null, [
+/*conn.sendHydrated(m.chat, str, wm, media, 'https://github.com/Unholy-00/Xfinity', 'Xfinity', null, null, [
 ['Creator', '#owner'],
 ['Back to Menu', '/menu']
 ], m,)}*/
