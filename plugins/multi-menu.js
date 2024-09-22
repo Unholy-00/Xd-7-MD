@@ -102,12 +102,12 @@ let menuA = ` ${lenguajeGB['smsConfi2']()} *${username}*
 
 *Searche Menu*
 ∘ _${usedPrefix}animeinfo_
-∘ _${usedPrefix}mangainfo_
 ∘ _${usedPrefix}chatgpt_ 
 ∘ _${usedPrefix}iavoz_
 ∘ _${usedPrefix}dalle_
 ∘ _${usedPrefix}google_
 ∘ _${usedPrefix}lyrics_
+∘ _${usedPrefix}ip_
 ∘ _${usedPrefix}ytsearch_
 ∘ _${usedPrefix}spotifysearch_
 ∘ _${usedPrefix}wikipedia_
