@@ -7,7 +7,7 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
 if (!text) throw `${lenguajeGB['smsAvisoMG']()}${mid.smsMalused4}\n*${usedPrefix + command} Billie Eilish - Bellyache*`
 try { 
 const yt_play = await search(args.join(' '))
-const texto1 = ` ✧═══ ${vs} ═══✧ 
+const texto1 = `✧═══ ${vs} ═══✧ 
 
 ▶︎ Title:
 » ${yt_play[0].title}
