@@ -6,20 +6,15 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
 try{
 let contact, number, ofc, nombre, description, correo, lugar, enlace, biog
 let pp = gataImg
-const cat = `𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 💖🐈
+const cat = `Xfinity
 * ${bot}
 
 *---------------------*
 
-*CENTER GATABOT*
-*centergatabot@gmail.com*
+*Xfinity email*
+*escastark@gmail.com*
 
-𝙂𝘼𝙏𝘼 𝘿𝙄𝙊𝙎 - 𝘼𝙎𝙄𝙎𝙏𝙀𝙉𝘾𝙄𝘼
-*${asistencia}*
-
-*---------------------*
-
-ᵃ ᶜᵒⁿᵗᶦⁿᵘᵃᶜᶦᵒ́ⁿ ˢᵉ ᵉⁿᵛᶦᵃʳᵃⁿ ˡᵒˢ ᶜᵒⁿᵗᵃᶜᵗᵒˢ ᵈᵉ ᵐᶦ ᵖʳᵒᵖᶦᵉᵗᵃʳᶦᵒ / ᵈᵉˢᵃʳʳᵒˡˡᵃᵈᵒʳᵉˢ`
+*---------------------*`
 let biografiaBot = await conn.fetchStatus(conn.user.jid.split('@')[0] + '@s.whatsapp.net').catch(_ => 'undefined')
 let bioBot = biografiaBot.status?.toString() || `${desc2 == '' ? lenguajeGB.smsContacto1() : desc2}`
 
@@ -40,7 +35,7 @@ enlace = official[0][0] == String(contact[0]) ? 'https://github.com/GataNina-Li'
 
 lista.push([number, ofc, nombre, description, official[3][0] == String(contact[0]) ? null : correo, lugar, enlace, bio, official[1][0] == String(contact[0]) ? 'https://www.youtube.com/@elrebelde.21' : null]) }  
 lista.push([conn.user.jid.split('@')[0], await conn.getName(conn.user.jid), packname, lenguajeGB.smsContacto8(), mail === '' ? 'centergatabot@gmail.com' : mail, lenguajeGB.smsContacto7(), md, bioBot, yt, ig, fb, paypal, nna])
-await conn.sendFile(m.chat, pp, 'lp.jpg', cat, fkontak, false, { contextInfo: {externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: ' 😻 𝗦𝘂𝗽𝗲𝗿 𝗚𝗮𝘁𝗮𝗕𝗼𝘁-𝗠𝗗 - 𝗪𝗵𝗮𝘁𝘀𝗔𝗽𝗽 ', previewType: 0, thumbnail: gataImg, sourceUrl: accountsgb.getRandom()}}})
+await conn.sendFile(m.chat, pp, 'lp.jpg', cat, fkontak, false, { contextInfo: {externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: ' 𝗦𝘂𝗽𝗲𝗿 𝗕𝗼𝘁 𝗪𝗵𝗮𝘁𝘀𝗔𝗽𝗽 ', previewType: 0, thumbnail: gataImg, sourceUrl: accountsgb.getRandom()}}})
 await conn.sendContactArray(m.chat, lista, null, { quoted: fkontak })
 
 } catch (e) {
@@ -73,32 +68,30 @@ let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status
 conn.reply(m.chat, 'Mario.js', fkontak,  m)
 //------------ BIO
 let ppown = await conn.profilePictureUrl(nomorown + '@s.whatsapp.net', 'image').catch(_ => imagen1[1]) 
-let teksbio = `𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 💖🐈
-*Wa.me/573136855110*
-𝙂𝙖𝙩𝙖𝘽𝙤𝙩𝙇𝙞𝙩𝙚-𝙈𝘿 💖🐈
-*wa.me/593993684821*
+let teksbio = `xfinity
+*Wa.me/212693294821*
 *---------------------*
 *CENTER GATABOT*
 *centergatabot@gmail.com*
-𝙂𝘼𝙏𝘼 𝘿𝙄𝙊𝙎 - 𝘼𝙎𝙄𝙎𝙏𝙀𝙉𝘾𝙄𝘼
+Unholy
 *${asistencia}*`
   let teks = ' '
 const sections = [
    {
-	title: `PROPIETARIO/OWNER`,
+	title: `OWNER`,
 	rows: [
-	    {title: "📱 • NOMBRE", rowId: ".owner nombre"},
-	{title: "🙌 • NUMERO", rowId: ".owner bio"},
-	{title: "🌐 • CUENTAS OFICIALES", rowId: ".cuentasgb"},
-	{title: "😸 • GRUPOS", rowId: ".grupos"},
-	{title: "🌎 • SCRIPT", rowId: ".sc"},
+	    {title: "▶︎• Name", rowId: ".owner nombre"},
+	{title: "▶︎• Number", rowId: ".owner bio"},
+	{title: "▶︎• Official account", rowId: ".cuentasgb"},
+	{title: "▶︎• Groups", rowId: ".grupos"},
+	{title: "▶︎• Script", rowId: ".sc"},
 	]
     },{
 	title: `–––––––·• APOYA AL BOT –––––––·•`,
 	rows: [
-	    {title: "💹 • DONAS", rowId: ".paypal"},
-	{title: "🤖 • INSTALARBOT", rowId: ".instalarbot"},
-	{title: "🌟 • PREMIUM", rowId: ".pasepremium"},
+	    {title: "▶︎ • Donate", rowId: ".paypal"},
+	{title: "▶︎ • INSTALARBOT", rowId: ".instalarbot"},
+	{title: "▶︎ • Premium", rowId: ".pasepremium"},
 	]
   },
 ]
@@ -106,11 +99,11 @@ const listMessage = {
   text: teks,
   footer: null,
   title: `╭━━━✦ *OWNER ✦━━━━⬣
-┃დ HOLA 👋 ${name}
+┃▶︎ Hi ${name}
 ┃≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋
 ┃${wm}
 ╰━━━━━✦ *${vs}* ✦━━━━⬣`,
-  buttonText: "HAGA CLICK AQUI",
+  buttonText: "Cilck Here",
   sections
 }
   try {
@@ -118,12 +111,12 @@ const listMessage = {
       const count = args[1] && args[1].length > 0 ? Math.min(99999999, Math.max(parseInt(args[1]), 1)) : !args[1] || args.length < 3 ? 1 : Math.min(1, count)
         switch (type) {
           case 'nombre':
-          await conn.reply(m.chat, `𝙉𝙊𝙈𝘽𝙍𝙀 𝘿𝙀𝙇 𝘽𝙊𝙏 : ${gt} 🐈`, fkontak, m)
-         // conn.reply(m.chat, "Nombre del bot : GataBot-MD 🐈", m, { contextInfo: { mentionedJid: [nowner] }})
+          await conn.reply(m.chat, `Bot number : ${gt} `, fkontak, m)
+         // conn.reply(m.chat, "Bot number : Xfinity", m, { contextInfo: { mentionedJid: [nowner] }})
             break
             case 'bio':
              await conn.sendFile(m.chat, gataImg.getRandom(), 'gata.jpg', teksbio, fkontak)
-         // conn.sendButton(m.chat, teksbio, fkontak, pp, [`☘️ 𝗠 𝗘 𝗡 𝗨`, `.menu`], m)
+         // conn.sendButton(m.chat, teksbio, fkontak, pp, [`Menu`, `.menu`], m)
             break
           default:
             return await conn.sendMessage(m.chat, listMessage, { quoted: m, contextInfo: { mentionedJid: [m.sender] }})
