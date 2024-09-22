@@ -9,13 +9,13 @@ var res = await fdrivedl(url)
 throw 'Ocurrio un error inesperado';
 }
 let caption=`    
-┃ 💫 ${mid.name}
+┃ ▶︎ ${mid.name}
 ┃ ${res.fileName}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ 💪 ${mid.smsYT11}
+┃ ▶︎ ${mid.smsYT11}
 ┃ ${formatBytes(res.sizeBytes)}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ 🚀 ${mid.smsYT12}
+┃ ▶︎ ${mid.smsYT12}
 ┃ ${res.mimetype}`.trim()
 m.reply(`${caption}`)
 let fileSize=formatBytes(res.sizeBytes)
@@ -25,7 +25,7 @@ conn.sendMessage(m.chat, { document: { url: res.downloadUrl }, fileName: res.fil
 async function fdrivedl(url) {
       let id;
       id = (url.match(/\/?id=(.+)/i) || url.match(/\/d\/(.*?)\//))[1];
-      if (!id) throw 'No se encontró id de descarga';
+      if (!id) throw 'No download id found';
       let res = await fetch(
         `https://drive.google.com/uc?id=${id}&authuser=0&export=download`,
         {
@@ -46,7 +46,7 @@ async function fdrivedl(url) {
       let { fileName, sizeBytes, downloadUrl } = JSON.parse(
         (await res.text()).slice(4)
       );
-      if (!downloadUrl) throw 'Se excedió el número de descargas del link';
+      if (!downloadUrl) throw 'The number of downloads for the link has been exceeded';
       let data = await fetch(downloadUrl);
       if (data.status !== 200) throw data.statusText;
       return {
