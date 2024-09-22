@@ -2,7 +2,7 @@ import axios from 'axios'
 import cheerio from 'cheerio'
 import fetch from 'node-fetch'
 let handler = async (m, { conn, args, usedPrefix, command }) => {
-if (!args[0]) throw `${lenguajeGB['smsAvisoMG']()}${mid.smsInsta2}\n*${usedPrefix + command} gata_dios*`
+if (!args[0]) throw `${lenguajeGB['smsAvisoMG']()}${mid.smsInsta2}\n*${usedPrefix + command} masharaymers*`
 try {
 const {key} = await conn.sendMessage(m, {text: wait})
 await conn.sendMessage(m, {text: waitt, edit: key})
@@ -37,7 +37,7 @@ let iggs = `┃ 𓃠 *${gt} ${vs}*
 let aa = `${res3.result.photo_profile || res.profile}`
 await conn.sendFile(m.chat, aa, 'error.jpg', iggs, m)
 conn.reply(m.chat, `${lenguajeGB['smsAvisoIIG']()} *${mid.smsinfo}*`, m, {contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
-title: '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 | 𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨',
+title: 'Xfinity',
 body: 'Super Bot WhatsApp',         
 previewType: 0, thumbnail: gataMenu,
 sourceUrl: md}}})
@@ -74,7 +74,7 @@ resolve(result)})})}
 /*import { instagramStalk } from '@bochilteam/scraper'
 
 let handler= async (m, { args, usedPrefix, command }) => {
-if (!args[0]) throw `${lenguajeGB['smsAvisoMG']()}𝙄𝙉𝙂𝙍𝙀𝙎𝙀 𝙀𝙇 𝙐𝙎𝙐𝘼𝙍𝙄𝙊 𝘿𝙀 𝘼𝙇𝙂𝙐𝙄𝙀𝙉 𝘿𝙀 𝙄𝙉𝙎𝙏𝘼𝙂𝙍𝘼𝙈\n𝙀𝙅𝙀𝙈𝙋𝙇𝙊\n*${usedPrefix + command} gatadios*\n\n𝙀𝙉𝙏𝙀𝙍 𝙄𝙉𝙎𝙏𝘼𝙂𝙍𝘼𝙈 𝙐𝙎𝙀𝙍𝙉𝘼𝙈𝙀\n𝙀𝙓𝘼𝙈𝙋𝙇𝙀\n*${usedPrefix + command} gata_dios*`
+if (!args[0]) throw `${lenguajeGB['smsAvisoMG']()}𝙀𝙉𝙏𝙀𝙍 𝙄𝙉𝙎𝙏𝘼𝙂𝙍𝘼𝙈 𝙐𝙎𝙀𝙍𝙉𝘼𝙈𝙀\n𝙀𝙓𝘼𝙈𝙋𝙇𝙀\n*${usedPrefix + command} masharaymers*`
 const {
 username,
 name,
@@ -86,40 +86,40 @@ postsH,
 m.reply(`
 ┃ 𓃠 *${gt} ${vs}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ 𝙉𝙊𝙈𝘽𝙍𝙀 | 𝙉𝘼𝙈𝙀
+┃ 𝙉𝘼𝙈𝙀
 ┃ *${name}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ 𝙐𝙎𝙐𝘼𝙍𝙄𝙊(𝘼) | 𝙐𝙎𝙀𝙍
+┃ 𝙐𝙎𝙀𝙍
 ┃ *${username}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ 𝙀𝙉𝙇𝘼𝘾𝙀 | 𝙇𝙄𝙉𝙆
+┃ 𝙇𝙄𝙉𝙆
 ┃ *https://instagram.com/${username.replace(/^@/, '')}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ 𝙎𝙀𝙂𝙐𝙄𝘿𝙊𝙍𝙀𝙎 | 𝙁𝙊𝙇𝙇𝙊𝙒𝙀𝙍𝙎 
+┃ 𝙁𝙊𝙇𝙇𝙊𝙒𝙀𝙍𝙎 
 ┃ *${followersH}* 
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ 𝙎𝙀𝙂𝙐𝙄𝘿𝙊𝙎 | 𝙁𝙊𝙇𝙇𝙊𝙒𝙄𝙉𝙂
+┃ 𝙁𝙊𝙇𝙇𝙊𝙒𝙄𝙉𝙂
 ┃ *${followingH}* 
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
-┃ 𝙋𝙐𝘽𝙇𝙄𝘾𝘼𝘾𝙄𝙊𝙉𝙀𝙎 | 𝙋𝙊𝙎𝙏𝙎
+┃ 𝙋𝙊𝙎𝙏𝙎
 ┃ *${postsH}* 
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ 𝘽𝙄𝙊𝙂𝙍𝘼𝙁Í𝘼 | 𝘿𝙀𝙎𝘾𝙍𝙄𝙋𝙏𝙄𝙊𝙉
+┃ 𝘿𝙀𝙎𝘾𝙍𝙄𝙋𝙏𝙄𝙊𝙉
 ┃ *${description}*
 `.trim()) 
   
-  let info = `💖 *Infórmate sobre las Novedades y recuerda tener la última versión.*\n\n💝 *Find out about what's new and remember to have the latest version.*
+  let info = `**Find out about what's new and remember to have the latest version.*
   `
- conn.sendButton(m.chat, info, `𝙂𝘼𝙏𝘼 𝘿𝙄𝙊𝙎 - 𝘼𝙎𝙄𝙎𝙏𝙀𝙉𝘾𝙄𝘼\n${asistencia}\n\n`, [
-['𝙈𝙚𝙣𝙪 𝘿𝙚𝙨𝙘𝙖𝙧𝙜𝙖𝙨 🌀', '#descargasmenu'],
-['𝙈𝙚𝙣𝙪 𝘾𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪 ✨', '.allmenu'],
-['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']], m)
+ conn.sendButton(m.chat, info, `Xfinity\n${asistencia}\n\n`, [
+['Downloads Menu', '#downloads'],
+['Full Menu', '.allmenu'],
+['Back to Menu', '/menu']], m)
  /*.trim()
   
 await conn.sendHydrated(m.chat, info, wm, null, ig, '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', null, null, [
-['𝙈𝙚𝙣𝙪 𝘿𝙚𝙨𝙘𝙖𝙧𝙜𝙖𝙨 🌀', '#descargasmenu'],
-['𝙈𝙚𝙣𝙪 𝘾𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪 ✨', '.allmenu'],
-['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']
+['DOWNLOAD Menu', '#Downloads'],
+['Full Menu', '.allmenu'],
+['Back to Menu', '/menu']
 ], m,)  
   
 }
