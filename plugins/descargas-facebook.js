@@ -10,30 +10,30 @@ const handler = async (m, { text, conn, args, usedPrefix, command }) => {
   try {
     res = await igdl(args[0]);
   } catch (error) {
-    return conn.reply(m.chat, 'Error al obtener datos. Verifica el enlace.', m);
+    return conn.reply(m.chat, 'Error Check the link.', m);
   }
 
   let result = res.data;
   if (!result || result.length === 0) {
-    return conn.reply(m.chat, 'No se encontraron resultados.', m);
+    return conn.reply(m.chat, 'No results Found.', m);
   }
 
   let data;
   try {
     data = result.find(i => i.resolution === "720p (HD)") || result.find(i => i.resolution === "360p (SD)");
   } catch (error) {
-    return conn.reply(m.chat, 'Error al procesar los datos.', m);
+    return conn.reply(m.chat, 'Error in procesar Data.', m);
   }
 
   if (!data) {
-    return conn.reply(m.chat, 'No se encontró una resolución adecuada.', m);
+    return conn.reply(m.chat, 'No suitable resolution found.', m);
   }
 
   let video = data.url;
   try {
     await conn.sendMessage(m.chat, { video: { url: video }, caption: null, fileName: 'fb.mp4', mimetype: 'video/mp4' }, { quoted: m });
   } catch (error) {
-    return conn.reply(m.chat, 'Error al enviar el video.', m);
+    return conn.reply(m.chat, 'Can not send the video.', m);
   }
 };
 
