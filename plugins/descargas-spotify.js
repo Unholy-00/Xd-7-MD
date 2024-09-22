@@ -69,17 +69,17 @@ if (!text) throw `${lenguajeGB.smsMalused2()} ⊱ *${usedPrefix + command} Belly
 try {
 m.react('⌛️')
 let songInfo = await spotifyxv(text)
-if (!songInfo.length) throw `*No se encontró una canción.*`
+if (!songInfo.length) throw `*No song found.*`
 let res = songInfo[0]
 let fileSizeInMB = (await getBuffer(res.url)).length / (1024 * 1024)
 let shortURL = await getTinyURL(res.url)
-const info = `✨ *${mid.smsYT1}:*
+const info = `▶︎ *${mid.smsYT1}:*
 _${res.name}_
 
-🗣️ *${mid.smsYT13}:*
+▶︎ *${mid.smsYT13}:*
 » _${res.artista.join(', ')}_
 
-🌐 *${mid.smsYT4}*:
+▶︎ *${mid.smsYT4}*:
 » _${shortURL}_
 
 🎶 *${mid.smsSpoti}*
@@ -97,7 +97,7 @@ let size = await yt.audio[q].fileSizeH
 let img = await getBuffer(res.imagen)
 conn.sendMessage(m.chat, { audio: { url: dl_url }, fileName: `${ttl}.mp3`, mimetype: 'audio/mpeg' }, { quoted: m })
 await conn.sendMessage(m.chat, {text: info, contextInfo: {forwardingScore: 9999999, isForwarded: true, "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "renderLargerThumbnail": true, "title": global.wm, "containsAutoReply": true, "mediaType": 1, "thumbnail": img, "thumbnailUrl": img, "mediaUrl": shortURL, "sourceUrl": shortURL}}}, {quoted: m});
-m.react('✅️')
+m.react('🍁')
 } catch (error) {
 }}
 handler.command = /^(spotify|music)$/i
