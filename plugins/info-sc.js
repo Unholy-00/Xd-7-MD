@@ -16,12 +16,12 @@ function kyun(seconds){
   var seconds = Math.floor(seconds % 60);
 
   //return pad(hours) + ':' + pad(minutes) + ':' + pad(seconds)
-  return `🌟  𝘽 𝙊 𝙏  -  𝙎 𝘾 𝙍 𝙄 𝙋 𝙏  🌟\n\n*» 𝙉𝙊𝙈𝘽𝙍𝙀 :* ${json?.name || 'GataBot-MD'}\n*» 𝙑𝙄𝙎𝙄𝙏𝘼𝙉𝙏𝙀𝙎 :* ${json?.watchers_count || '-'}\n*» 𝘼𝘾𝙏𝙐𝘼𝙇𝙄𝙕𝘼𝘾𝙄𝙊𝙉 :* ${moment(json?.updated_at).format('DD/MM/YY - HH:mm:ss') || '-'}\n*» 𝙐𝙍𝙇 :* ${json?.html_url || 'https://github.com/GataNina-Li/GataBot-MD'}\n\n${json?.forks_count || '-'} Forks · ${json?.stargazers_count || '-'} Stars · ${json?.open_issues_count || '-'} Issues\n\n*⏰ 𝙏𝙄𝙀𝙈𝙋𝙊 𝘼𝘾𝙏𝙄𝙑𝙊 | 𝘼𝘾𝙏𝙄𝙑𝙀 𝙏𝙄𝙈𝙀:*\n \t${pad(days)} Dias\t ${pad(hours)} Horas ${pad(minutes)} Minutos ${pad(seconds)} Segudos \t\n`
+  return `  𝘽 𝙊 𝙏  -  𝙎 𝘾 𝙍 𝙄 𝙋 𝙏  \n\n*» Name :* ${json?.name || 'Xfinity'}\n*» Visits:* ${json?.watchers_count || '-'}\n*» Actualization :* ${moment(json?.updated_at).format('DD/MM/YY - HH:mm:ss') || '-'}\n*» Url :* ${json?.html_url || 'https://github.com/Unholy-00/Xfinity'}\n\n${json?.forks_count || '-'} Forks · ${json?.stargazers_count || '-'} Stars · ${json?.open_issues_count || '-'} Issues\n\n*Active time:*\n \t${pad(days)} Days\t ${pad(hours)} Hour ${pad(minutes)} Minutes ${pad(seconds)} Seconds\t\n`
 }
 					const runtime = process.uptime()
 		            const teks = `${kyun(runtime)}`
 					const itsme = `0@s.whatsapp.net`
-					const split = `😻 𝗦𝘂𝗽𝗲𝗿 𝗚𝗮𝘁𝗮𝗕𝗼𝘁-𝗠𝗗 - 𝗪𝗵𝗮𝘁𝘀𝗔𝗽𝗽`
+					const split = `𝗦𝘂𝗽𝗲𝗿 𝗕𝗼𝘁 𝗪𝗵𝗮𝘁𝘀𝗔𝗽𝗽`
 					const rtimebro = {
 					contextInfo: {
 					participant: itsme,
