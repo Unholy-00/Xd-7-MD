@@ -107,6 +107,7 @@ let menuA = ` ${lenguajeGB['smsConfi2']()} *${username}*
 ∘ _${usedPrefix}dalle_
 ∘ _${usedPrefix}google_
 ∘ _${usedPrefix}lyrics_
+∘ _${usedPrefix}githubstalk_
 ∘ _${usedPrefix}ip_
 ∘ _${usedPrefix}ytsearch_
 ∘ _${usedPrefix}spotifysearch_
