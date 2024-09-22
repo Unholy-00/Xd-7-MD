@@ -188,6 +188,7 @@ let menuA = `${lenguajeGB['smsConfi2']()} *${username}*
 ∘ _${usedPrefix}infobot_
 ∘ _${usedPrefix}installbot_
 ∘ _${usedPrefix}owner_
+∘ _${usedPrefix}script_
 ∘ _${usedPrefix}ping_
 ∘ _${usedPrefix}jadibot_
 ∘ _${usedPrefix}listjadibots_
