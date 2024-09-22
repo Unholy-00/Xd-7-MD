@@ -23,12 +23,12 @@ let handler = async (m, { conn, usedPrefix, command, text }) => {
     const apkData = await downloadApk(searchResults[0].id);
     const response = `${eg}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃💫 ${mid.name}: ${apkData.name}
-┃📦 𝙋𝘼𝘾𝙆𝘼𝙂𝙀: ${apkData.package}
-┃🕒 ${mid.smsApk2}: ${apkData.lastup}
-┃💪 ${mid.smsYT11} ${apkData.size}
+┃▶︎ ${mid.name}: ${apkData.name}
+┃▶︎ Package: ${apkData.package}
+┃▶︎ ${mid.smsApk2}: ${apkData.lastup}
+┃▶︎ ${mid.smsYT11} ${apkData.size}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ ${mid.smsApk3} 🚀🚀🚀`;
+┃ ${mid.smsApk3} •••`;
     await conn.sendMessage(m.chat, { image: { url: apkData.icon }, caption: response }, { quoted: m });
     if (apkData.size.includes('GB') || apkData.size.replace(' MB', '') > 999) {
       return await conn.sendMessage(m.chat, { text: mid.smsApk4 }, { quoted: m });
