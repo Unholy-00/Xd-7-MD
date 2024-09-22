@@ -6,7 +6,7 @@ let handler = async (m, { conn, usedPrefix, command, text }) => {
   try {
     let res = await BuscarLetra(text);
     let { titulo, artista, albulm, fecha, Generos, letra } = res;
-    let txt = `*𝙂𝙊𝙊𝙂𝙇𝙀 𝙇𝙔𝙍𝙄𝘾𝙎 🪴*\n\n`;
+    let txt = `*𝙂𝙊𝙊𝙂𝙇𝙀 𝙇𝙔𝙍𝙄𝘾𝙎*\n\n`;
     txt += ` *↬ ${mid.smsYT1}:* ${titulo}\n`;
     txt += ` *↬ ${mid.smsYT6}:* ${artista}\n`;
     txt += ` *↬ ${mid.smsYT7}:* ${albulm}\n`;
