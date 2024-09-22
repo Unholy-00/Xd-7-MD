@@ -1,21 +1,21 @@
 import axios from 'axios'
 var handler = async(m, { conn, text, usedPrefix, command }) => {
-if (!text) return conn.reply(m.chat, '*⚠️ INGRESE EL NOMBRE DE UN USUARIO DE GITHUB*', m)
+if (!text) return conn.reply(m.chat, '*ENTER THE NAME OF A GITHUB USER*', m)
 try {
 await mensajesEditados(conn, m)
 let request = await githubstalk(text) 
 let { username, following, followers, type, bio, company, blog, location, email, public_repo, public_gists, profile_pic } = request
 let thumb = await (profile_pic)
 let gata = `*⬤── 「 𝙂𝙄𝙏𝙃𝙐𝘽 𝙎𝙏𝘼𝙇𝙆 」 ──⬤*
-➸ *Usuario*: ${username}
-➸ *Biografía*: ${bio}
-➸ *Compañía*: ${company}
-➸ *Correo electrónico:* ${email}
-➸ *Repositorios públicos:* ${public_repo}
-➸ *Seguidor:* ${followers}
-➸ *Siguidores:* ${following}
+➸ *Username*: ${username}
+➸ *Bio*: ${bio}
+➸ *Company*: ${company}
+➸ *Email:* ${email}
+➸ *Repositorie:* ${public_repo}
+➸ *Follow:* ${followers}
+➸ *Following:* ${following}
 ➸ *Blog:* ${blog}
-➸ *Ubicación:* ${location}`
+➸ *Location:* ${location}`
 await conn.sendFile(m.chat, logogit, 'githubstalk.jpg', gata, m)
 } catch (e) {
 await conn.sendMessage(m.chat, {text: `${lenguajeGB['smsMalError3']()}#report ${lenguajeGB['smsMensError2']()} ${usedPrefix + command}\n\n${wm}`, edit: key})
