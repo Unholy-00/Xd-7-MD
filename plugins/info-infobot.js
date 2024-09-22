@@ -54,52 +54,52 @@ let old = performance.now()
   let speed = neww - old
 
 let info = `╭━━━━[ ${gt} ]━━━━━⬣
-┃➥ *CREADORA | CREATOR*
-┃ღ *𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨*
+┃➥ *Creator*
+┃ღ *Unholy*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃➥ *CONTACTO | CONTACT* 
+┃➥ *Contact* 
 ┃ღ *${ig}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃𓃠 *VERSIÓN ACTUAL | VERSION*
+┃𓃠 *Version *
 ┃ღ ${vs}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃➥ *PREFIJO | PREFIX*
+┃➥ *Prefix*
 ┃ღ *${usedPrefix}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃➥ *CHATS PRIVADOS | PRIVATE CHAT*
+┃➥ *Private chat*
 ┃ღ *${chats.length - groups.length}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃➥ *CHATS DE GRUPOS | GROUP CHAT*
+┃➥ *Group chat*
 ┃ღ *${groups.length}* 
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃➥ *CHATS EN TOTAL | TOTAL CHATS*
+┃➥ *Total chats*
 ┃ღ *${chats.length}* 
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃➥ *ACTIVIDAD | ACTIVITY*
+┃➥ *Activity*
 ┃ღ *${uptime}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃➥ *USUARIOS | USERS*
+┃➥ *Users*
 ┃ღ *${totalreg}* 
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃➥ *VELOCIDAD | SPEED*
+┃➥ *Speed*
 ┃ღ  *${speed}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃➥ *BOT SECUNDARIOS ACTIVOS | ACTIVE SECONDARY BACKS*
+┃➥ *Active secondary backs*
 ┃ღ *${totaljadibot.length}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃➥ *AUTOREAD*
-┃ღ ${autoread ? '*Activado ✔*' : '*Desactivado ✘*'}
+┃➥ *Autoread*
+┃ღ ${autoread ? '*Active *' : '*Desactive *'}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃➥ *RESTRICT* 
-┃ღ ${restrict ? '*Activado ✔*' : '*Desactivado ✘*'} 
+┃➥ *Restrict* 
+┃ღ ${restrict ? '*Activado *' : '*Desactivado *'} 
 ┃
-╰━━━[ 𝙄𝙣𝙛𝙤𝙧𝙢𝙖𝙘𝙞ó𝙣 | 𝙄𝙣𝙛𝙤𝙧𝙢𝙖𝙩𝙞𝙤𝙣 ]━━⬣`
+╰━━━[ 𝙄𝙣𝙛𝙤𝙧𝙢𝙖𝙩𝙞𝙤𝙣 ]━━⬣`
 await conn.sendButton(m.chat, info, wm, pp, [
-['𝙑𝙚𝙧 𝙂𝙧𝙪𝙥𝙤𝙨 | 𝙎𝙚𝙚 𝙂𝙧𝙤𝙪𝙥𝙨', '#grupolista'],
-['𝘾𝙪𝙚𝙣𝙩𝙖𝙨 𝙊𝙛𝙞𝙘𝙞𝙖𝙡𝙚𝙨 | 𝘼𝙘𝙘𝙤𝙪𝙣𝙩𝙨', '/cuentasgb'],
-['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪', '.menu']], null, [
-['𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', `${md}`]], fkontak)
-//conn.sendFile(m.chat, gataImg, 'lp.jpg', info, fkontak, false, { contextInfo: {externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: ' 😻 𝗦𝘂𝗽𝗲𝗿 𝗚𝗮𝘁𝗮𝗕𝗼𝘁-𝗠𝗗 - 𝗪𝗵𝗮𝘁𝘀𝗔𝗽𝗽 ', previewType: 0, thumbnail: gataImg, sourceUrl: accountsgb }}}) 
+['See Groups', '#grupolista'],
+['Accounts', '/cuentasgb'],
+['Back to Menu', '.menu']], null, [
+['Xfinity', `${md}`]], fkontak)
+//conn.sendFile(m.chat, gataImg, 'lp.jpg', info, fkontak, false, { contextInfo: {externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: '  𝗦𝘂𝗽𝗲𝗿 𝗕𝗼𝘁 𝗪𝗵𝗮𝘁𝘀𝗔𝗽𝗽 ', previewType: 0, thumbnail: gataImg, sourceUrl: accountsgb }}}) 
 /*let info = `
 ╭━━━━[ ${gt} ]━━━━━⬣
 ┃
