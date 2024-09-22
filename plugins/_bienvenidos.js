@@ -2,7 +2,7 @@ let handler = async (m, { conn, participants, groupMetadata }) => {
 
     const pp = await conn.profilePictureUrl(m.chat, 'image').catch(_ => null) || './src/admins.png'
    
-    let text =`_👋🏻Hola, sean todos bienvenidos a:_\n *${groupMetadata.subject}*
+    let text =`_Hello, everyone is welcome to:_\n *${groupMetadata.subject}*
 
 ${groupMetadata.desc?.toString() || 'desconocido'}
 `.trim()
