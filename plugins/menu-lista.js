@@ -89,6 +89,13 @@ const horarioFecha = lugarFecha.format('dddd, DD [de] MMMM [del] YYYY || HH:mm A
 
 if (!/web|desktop|unknown/gi.test(dispositivo)) {  
 let menu = `
+▶︎ *Totale users* : _${Object.keys(global.db.data.users).length}_     
+▶︎ *Uptime* : _${uptime}_ 
+▶︎ *Version :* : _${vs}_
+▶︎ *Registered :* ${user.registered === true ? '*Yes*' : '*No*' + usedPrefix + 'verificar_'}
+▶︎ *${lenguajeGB['smsBotonM7']().charAt(0).toUpperCase() + lenguajeGB['smsBotonM7']().slice(1).toLowerCase()} »* ${user.premiumTime > 0 ? '*Yes*' : '*No*' + usedPrefix + ''}
+▶︎ *Exp :* ${exp} 
+▶︎ *Diamands :* ${limit}  
 `.trim()
       
 const buttonParamsJson = JSON.stringify({
