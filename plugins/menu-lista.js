@@ -105,6 +105,7 @@ sections: [
 { title: " Information", highlight_label: "Public",
 rows: [
 { header: "Downloads", title: "Get your Downloads list", description: "", id: usedPrefix + "downloads" },
+{ header: "Ai Menu", title: "Get your Ai list", description: "", id: usedPrefix + "aimenu" },
 { header: "Searches", title: "List of search commands", description: "", id: usedPrefix + "searches" },
 { header: "Stickers", title: "Stickers commands", description: "", id: usedPrefix + "stickers" }
 ]},
