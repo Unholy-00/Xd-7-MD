@@ -4,8 +4,6 @@
  
 <p align="center">
 <img src="https://i.imgur.com/kd8sus3.jpeg" alt="Xfinity" width="800"/>
-  
-> visit **[Xfinity Police.](https://github.com/Unholy-00/Xfinity/blob/master/terms.md)** 
 </p>   
 
 ###  CREATOR 
